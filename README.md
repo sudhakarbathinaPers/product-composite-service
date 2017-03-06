@@ -45,4 +45,4 @@ docker run -p 9006:9006 -t sudhakarbathina/product-composite-service  
 
 | Method | Route | Class | Description
 | ------ | ----- | ----- | -----------
-| GET | /products/v1/{id} | ProductCompositeResource.productRatingById | Provides requested Itemid and price
+| GET | /products/v1/{id} | ProductCompositeResource.productById | Provides requested product Itemid, name, rating and price info
