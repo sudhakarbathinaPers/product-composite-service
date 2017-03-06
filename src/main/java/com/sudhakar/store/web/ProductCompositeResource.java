@@ -26,10 +26,8 @@ public class ProductCompositeResource {
 	
 
     @RequestMapping( path = "/{id}", method = RequestMethod.GET)
-    public Composite getProductPriceById(@PathVariable String id){
-        System.err.println("Get entry {}"+ Thread.currentThread().getName());
-        Composite com = service.getProductComposite(id);
-        System.err.println("Get end {}"+ Thread.currentThread().getName());
+    public Composite getProductById(@PathVariable String id){
+         Composite com = service.getProductComposite(id);
         return com;
     }	
  
